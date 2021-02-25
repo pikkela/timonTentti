@@ -1,6 +1,7 @@
 import logo from './logo.svg';
 import './App.css';
 import UserContainer from './containers/UserContainer';
+import EventContainer from './containers/EventContainer';
 
 function App() {
   return (
@@ -9,7 +10,7 @@ function App() {
         <thead>
           <tr>
             <td><UserContainer/></td>
-            <td></td>
+            <td><EventContainer/></td>
             <td></td>
           </tr>
         </thead>
