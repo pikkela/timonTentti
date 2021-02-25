@@ -10,7 +10,10 @@ const UserComponent=(props)=>{
         <h2>Events</h2>
         <table  style={{marginLeft:"15%"}}><tbody>{events}</tbody></table>
         <hr/>
-
+        Name<input type="text" name="name" onChange={e=>props.handleChange(e)} value={props.event.name}></input><br/>
+        location<input type="text" name="location" onChange={e=>props.handleChange(e)} value={props.event.location}></input><br/>
+        time<input type="text" name="time" onChange={e=>props.handleChange(e)} value={props.event.time}></input><br/>
+        <button  onClick={props.handleSubmit}>Save</button>
     </div>);
 }
 
