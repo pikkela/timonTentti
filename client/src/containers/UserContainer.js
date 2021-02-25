@@ -21,9 +21,11 @@ const UserContainer=()=>{
         setUser(aNew); //storing to the memory of container
     };
 
-
     const handleSubmit=()=>{
         const result =create(user);
+        const temp = [...users];    //create temp array for users
+        temp.push(user);            //add new user in array
+        setUsers(temp);             //set temp array to users state
         if(result.id>0){
             alert("Saved  " +JSON.stringify(user));
         }
